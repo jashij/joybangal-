@@ -12,10 +12,18 @@ $(document).ready(() => {
             var c = 0;
 
             const APIS = [
-                {
-                    method: "POST",
-                    url: `http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-${mobile}/operator-Robi/send`,
-                },
+
+     {
+
+         method: "POST",
+
+         url: `https://your-api-endpoint/?phone=+88${mobile}`,
+
+         body: `type=register&phone=${mobile}`
+
+     }
+
+],
                 {
                     method: 'POST',
                     url: "http://robi.api.bongobd.com/api/login/send-otp",
